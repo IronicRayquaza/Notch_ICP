@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hello29_backend": {
+      "main": "src/hello29_backend/main.mo",
+      "type": "motoko"
+    },
+    "hello29_frontend": {
+      "dependencies": [
+        "hello29_backend"
+      ],
+      "source": [
+        "src/hello29_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello29_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
